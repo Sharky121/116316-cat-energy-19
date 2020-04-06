@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Логинов](https://up.htmlacademy.ru/adaptive/19/user/116316).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Шрамко](https://htmlacademy.ru/profile/id852139).
 
 ---
 
