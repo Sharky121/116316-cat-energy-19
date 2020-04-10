@@ -16,13 +16,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="">Каталог продукции</a>
+              <a class="site-list__link" href="">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="">Подбор программы</a>
+              <a class="site-list__link" href="">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -37,7 +37,7 @@
         <form class="select-program__form program-form" method="POST" action="https://echo.htmlacademy.ru">
           <!-- Общая информация -->
           <fieldset class="program-form__group">
-            <legend class="visually-hidden">Общая информация</legend>
+            <legend class="visually-hidden">Общая информация о коте</legend>
 
             <ul class="program-form__list" role="none">
               <li class="program-form__item">
@@ -127,7 +127,7 @@
             </ul>
           </fieldset>
 
-          <button class="btn program-form__btn">Отправить заявку</button>
+          <button class="btn program-form__send">Отправить заявку</button>
           <span class="program-form__footnote">* — Обязательные поля</span>
         </form>
       </section>
@@ -146,21 +146,21 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <a class="page-footer__logo-link">
-          <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Кэт энерджи">
+      <div class="page-footer__logo footer-logo">
+        <a class="footer-logo__link">
+          <img class="footer-logo__img" src="img/logo-footer.svg" alt="Кэт энерджи">
         </a>
       </div>
 
       <div class="page-footer__social social">
-        <ul class="social-list">
-          <li class="social-list__item">
+        <ul class="social__list">
+          <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">Мы в Вконтакте</a>
           </li>
-          <li class="social-list__item">
+          <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
           </li>
-          <li class="social-list__item">
+          <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">Мы в Инстаграме</a>
           </li>
         </ul>
@@ -168,8 +168,8 @@
 
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank">
-          <span class="copyright__link-text">HTML Academy</span>
-          <img class="copyright__link-img" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          <span class="copyright__text">HTML Academy</span>
+          <img class="copyright__img" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
     </footer>
