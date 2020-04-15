@@ -34,114 +34,118 @@
 
     <main class="page-form">
       <section class="select-program">
-        <h1 class="page-form__title">Подбор программы</h1>
-        <p class="select-program__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="container">
+          <h1 class="page-form__title">Подбор программы</h1>
+          <p class="select-program__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-        <form class="select-program__form program-form" method="POST" action="https://echo.htmlacademy.ru">
-          <!-- Общая информация -->
-          <fieldset class="program-form__group">
-            <legend class="visually-hidden">Общая информация о коте</legend>
+          <form class="select-program__form program-form" method="POST" action="https://echo.htmlacademy.ru">
+            <!-- Общая информация -->
+            <fieldset class="program-form__group">
+              <legend class="visually-hidden">Общая информация о коте</legend>
 
-            <ul class="program-form__list" role="none">
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--text" for="name">Имя:<sup><small>*</small></sup></label>
-                <input class="program-form__input program-form__input--text" type="text" name="name" id="name" placeholder="Барсик" required>
-              </li>
+              <ul class="program-form__list" role="none">
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--text" for="name">Имя:<sup><small>*</small></sup></label>
+                  <input class="program-form__input program-form__input--text" type="text" name="name" id="name" placeholder="Барсик" required>
+                </li>
 
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--text" for="weight">Вес (кг):<sup><small>*</small></sup></label>
-                <input class="program-form__input program-form__input--text" type="number" name="weight" id="weight" placeholder="7" required>
-              </li>
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--text" for="weight">Вес (кг):<sup><small>*</small></sup></label>
+                  <input class="program-form__input program-form__input--text" type="number" name="weight" id="weight" placeholder="7" required>
+                </li>
 
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--text" for="age">Возраст (лет):</label>
-                <input class="program-form__input program-form__input--text" type="number" name="age" id="age" placeholder="7">
-              </li>
-            </ul>
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--text" for="age">Возраст (лет):</label>
+                  <input class="program-form__input program-form__input--text" type="number" name="age" id="age" placeholder="7">
+                </li>
+              </ul>
 
-            <ul class="program-form__list" role="none">
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--radio" for="loss">Похудение</label>
-                <input class="program-form__input program-form__input--radio" type="radio" name="program" id="loss" value="loss" checked>
-              </li>
+              <ul class="program-form__list" role="none">
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--radio" for="loss">Похудение</label>
+                  <input class="program-form__input program-form__input--radio" type="radio" name="program" id="loss" value="loss" checked>
+                </li>
 
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--radio" for="gain">Набор массы</label>
-                <input class="program-form__input program-form__input--radio" type="radio" name="program" id="gain" value="gain">
-              </li>
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--radio" for="gain">Набор массы</label>
+                  <input class="program-form__input program-form__input--radio" type="radio" name="program" id="gain" value="gain">
+                </li>
 
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
-                <input class="program-form__input program-form__input--radio" type="radio" name="program" id="advice" value="advice">
-              </li>
-            </ul>
-          </fieldset>
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
+                  <input class="program-form__input program-form__input--radio" type="radio" name="program" id="advice" value="advice">
+                </li>
+              </ul>
+            </fieldset>
 
-          <!-- Контактные данные (владельца кота) -->
-          <fieldset class="program-form__group">
-            <legend class="form-group__title">Контактные данные (владельца кота)</legend>
+            <!-- Контактные данные (владельца кота) -->
+            <fieldset class="program-form__group">
+              <legend class="form-group__title">Контактные данные (владельца кота)</legend>
 
-            <ul class="program-form__list" role="none">
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--text" for="email">E-mail:<sup><small>*</small></sup></label>
-                <input class="program-form__input program-form__input--text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-              </li>
+              <ul class="program-form__list" role="none">
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--text" for="email">E-mail:<sup><small>*</small></sup></label>
+                  <input class="program-form__input program-form__input--text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                </li>
 
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--text" for="tel">Телефон:<sup><small>*</small></sup></label>
-                <input class="program-form__input program-form__input--text" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
-              </li>
-            </ul>
-          </fieldset>
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--text" for="tel">Телефон:<sup><small>*</small></sup></label>
+                  <input class="program-form__input program-form__input--text" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+                </li>
+              </ul>
+            </fieldset>
 
-          <!-- Комментарий -->
-          <div class="program-form__group">
-            <label class="program-form__label program-form__label--textarea" for="cat-habits">
-              Комментарий
-            </label>
+            <!-- Комментарий -->
+            <div class="program-form__group">
+              <label class="program-form__label program-form__label--textarea" for="cat-habits">
+                Комментарий
+              </label>
 
-            <textarea class="program-form__textarea" id="cat-habits" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
+              <textarea class="program-form__textarea" id="cat-habits" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
 
-          <!-- Дополнительно -->
-          <fieldset class="program-form__group">
-            <legend class="form-group__title">Дополнительно</legend>
+            <!-- Дополнительно -->
+            <fieldset class="program-form__group">
+              <legend class="form-group__title">Дополнительно</legend>
 
-            <ul class="program-form__list" role="none">
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--checkbox" for="sugar">Сахарозаменитель</label>
-                <input class="program-form__input program-form__input--checkbox" type="checkbox" name="sugar" id="sugar" checked>
-              </li>
+              <ul class="program-form__list" role="none">
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--checkbox" for="sugar">Сахарозаменитель</label>
+                  <input class="program-form__input program-form__input--checkbox" type="checkbox" name="sugar" id="sugar" checked>
+                </li>
 
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--checkbox" for="water">Питьевая вода</label>
-                <input class="program-form__input program-form__input--checkbox" type="checkbox" name="water" id="water">
-              </li>
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--checkbox" for="water">Питьевая вода</label>
+                  <input class="program-form__input program-form__input--checkbox" type="checkbox" name="water" id="water">
+                </li>
 
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--checkbox" for="milk">Молоко</label>
-                <input class="program-form__input program-form__input--checkbox" type="checkbox" name="milk" id="milk">
-              </li>
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--checkbox" for="milk">Молоко</label>
+                  <input class="program-form__input program-form__input--checkbox" type="checkbox" name="milk" id="milk">
+                </li>
 
-              <li class="program-form__item">
-                <label class="program-form__label program-form__label--checkbox" for="vitamins">Витамины</label>
-                <input class="program-form__input program-form__input--checkbox" type="checkbox" name="vitamins" id="vitamins">
-              </li>
-            </ul>
-          </fieldset>
+                <li class="program-form__item">
+                  <label class="program-form__label program-form__label--checkbox" for="vitamins">Витамины</label>
+                  <input class="program-form__input program-form__input--checkbox" type="checkbox" name="vitamins" id="vitamins">
+                </li>
+              </ul>
+            </fieldset>
 
-          <button class="btn program-form__send">Отправить заявку</button>
-          <span class="program-form__footnote">* — Обязательные поля</span>
-        </form>
+            <button class="btn program-form__send">Отправить заявку</button>
+            <span class="program-form__footnote">* — Обязательные поля</span>
+          </form>
+        </div>
       </section>
 
       <!-- Секция КАРТА И КОНТАКТЫ -->
       <section class="map">
-        <h2 class="visually-hidden">Контакты</h2>
+        <div class="container">
+          <h2 class="visually-hidden">Контакты</h2>
 
-        <div class="map__contacts address">
-          <b class="address__title">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="map__contacts address">
+            <b class="address__title">Приглашаем к сотрудничеству дилеров!</b>
+            <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
         </div>
 
         <!-- Карта -->
