@@ -1,0 +1,24 @@
+.how-it-work {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.how-it-work__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  font-size: 36px;
+  font-weight: inherit;
+}
+
+.how-it-work__list {
+  @include list-reset;
+}
+
+.how-it-work__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

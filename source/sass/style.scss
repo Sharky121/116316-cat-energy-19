@@ -1,3 +1,29 @@
-body {
-  background: red;
-}
+// Common
+@import "fonts.scss";
+@import "base.scss";
+@import "mixin.scss";
+@import "variables.scss";
+
+// Layout
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/site-list.scss";
+
+// index
+@import "blocks/home.scss";
+@import "blocks/diet-plans.scss";
+@import "blocks/diet-plans-item.scss";
+@import "blocks/how-it-work.scss";
+@import "blocks/how-it-work-item.scss";
+@import "blocks/success-story.scss";
+@import "blocks/success-story-table.scss";
+@import "blocks/map.scss";
+
+// catalog
+@import "blocks/catalog.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/gift.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/catalog-table.scss";
