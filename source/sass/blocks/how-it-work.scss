@@ -1,5 +1,6 @@
 .how-it-work {
-  padding: 30px 0 40px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .how-it-work__title {
@@ -11,10 +12,7 @@
 }
 
 .how-it-work__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include list-reset;
 }
 
 .how-it-work__item {
@@ -23,10 +21,4 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.how-it-work-item__description {
-  margin: 0;
-
-  font-family: "Arial", sans-serif;
 }

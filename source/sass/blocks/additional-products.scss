@@ -11,14 +11,12 @@
 }
 
 .additional-products__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include list-reset;
 }
 
 .additional-products-item {
-  padding: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .additional-products-item__title {
@@ -42,25 +40,4 @@
 
 .additional-products-table__td:last-child {
   text-align: right;
-}
-
-.gift {
-  padding: 65px 70px 40px;
-
-  text-align: center;
-  color: #ffffff;
-
-  background: url("../../img/gift-photo-mobile@1x.jpg") no-repeat center;
-  background-size: 100%;
-}
-
-.gift__img {
-  margin-bottom: 65px;
-}
-
-.gift__text {
-  margin: 0;
-
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
 }

@@ -1,0 +1,38 @@
+.catalog-item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &:last-child {
+    padding-top: 30px;
+  }
+
+  &--view-more {
+    text-align: center;
+
+    .catalog-item__img {
+      margin-bottom: 25px;
+    }
+
+    .catalog-item__title {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.catalog-item__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog-item__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  color: $color-dark-grey;
+}

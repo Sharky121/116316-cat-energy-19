@@ -1,56 +1,29 @@
 // Common
 @import "fonts.scss";
+@import "base.scss";
+@import "mixin.scss";
+@import "variables.scss";
 
 // Layout
 @import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/site-list.scss";
 
 // index
 @import "blocks/home.scss";
 @import "blocks/diet-plans.scss";
+@import "blocks/diet-plans-item.scss";
 @import "blocks/how-it-work.scss";
+@import "blocks/how-it-work-item.scss";
 @import "blocks/success-story.scss";
+@import "blocks/success-story-table.scss";
 @import "blocks/map.scss";
 
 // catalog
 @import "blocks/catalog.scss";
 @import "blocks/additional-products.scss";
-
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.3;
-  color: #000000;
-
-  background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
-  border: 0;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+@import "blocks/gift.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/catalog-table.scss";

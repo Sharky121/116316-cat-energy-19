@@ -1,25 +1,8 @@
 .page-header {
-  padding: 10px 20px 15px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-right: 20px;
 
   outline: 1px solid red;
-}
-
-.site-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.site-list__item {
-  padding: 20px 0;
-
-  text-align: center;
-}
-
-.site-list__link {
-  font-size: 20px;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #000000;
 }

@@ -1,0 +1,12 @@
+.catalog-table {
+  width: 100%;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  text-align: left;
+  color: $color-dark-grey;
+}
+
+.catalog-table__td:last-child {
+  text-align: right;
+}
