@@ -1,0 +1,15 @@
+.footer-logo {
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  text-align: center;
+
+  @include outline(red);
+}
+
+@include tablet-size {
+  .footer-logo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

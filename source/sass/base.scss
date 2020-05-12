@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -17,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -29,11 +38,4 @@ a {
 
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
 }

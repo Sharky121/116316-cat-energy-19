@@ -1,0 +1,47 @@
+.how-it-work__item {
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include outline(red);
+}
+
+.how-it-work-item__description {
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  color: $color-dark-grey;
+}
+
+@include tablet-size {
+  .how-it-work__item {
+    flex-basis: 245px;
+    min-height: 230px;
+    width: 245px;
+    margin-right: 90px;
+    margin-bottom: 90px;
+    padding-left: 0;
+    padding-top: 115px;
+    padding-bottom: 50px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+
+  .how-it-work-item__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@include desktop-size {
+  .how-it-work__item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.how-it-work {
+  @include outline(blue);
+}
+
+.how-it-work__container {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.how-it-work__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  font-size: 36px;
+  font-weight: inherit;
+}
+
+.how-it-work__list {
+  @include list-reset;
+}
+
+@include tablet-size {
+  .how-it-work__title {
+    margin-bottom: 60px;
+
+    font-size: 60px;
+  }
+
+  .how-it-work__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@include desktop-size {
+  .how-it-work__container {
+    padding-bottom: 25px;
+  }
+}

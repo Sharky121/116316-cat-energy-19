@@ -1,0 +1,21 @@
+.map {
+  min-height: 360px;
+
+  background-image: url("../../../img/bg-map-mobile@1x.png");
+}
+
+@include tablet-size {
+  .map {
+    min-height: 395px;
+
+    background-image: url("../../../img/bg-map-tablet@1x.png");
+  }
+}
+
+@include desktop-size {
+  .map {
+    min-height: 400px;
+
+    background-image: url("../../../img/bg-map-desktop@1x.png");
+  }
+}

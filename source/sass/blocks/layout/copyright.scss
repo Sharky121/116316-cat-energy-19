@@ -1,0 +1,27 @@
+.copyright {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include outline(red);
+}
+
+.copyright__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $color-dark-grey;
+}
+
+@include tablet-size {
+  .copyright {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

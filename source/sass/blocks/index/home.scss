@@ -1,0 +1,103 @@
+.home {
+  text-align: center;
+  color: #ffffff;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-image: url("../../../img/index-background-mobile@1x.jpg"), linear-gradient($color-green 50%, #ffffff 50%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}
+
+.home__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.home__sub-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  text-transform: uppercase;
+}
+
+.home__btn {
+  display: inline-block;
+  min-height: 40px;
+  width: 100%;
+  margin-top: auto;
+
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include outline($color-green);
+}
+
+@include tablet-size {
+  .home {
+    text-align: left;
+    color: $color-black;
+  }
+
+  .home__container {
+    min-height: 880px;
+    padding-left: 120px;
+    padding-right: 0;
+
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .home__title {
+    width: 415px;
+    margin-bottom: 30px;
+
+    font-size: 60px;
+  }
+
+  .home__sub-title {
+    margin-bottom: 50px;
+
+    font-size: 20px;
+  }
+
+  .home__btn {
+    min-height: 52px;
+    width: 245px;
+    margin-top: 0;
+
+    font-size: 20px;
+    line-height: 52px;
+  }
+}
+
+@include desktop-size {
+  .home {
+    margin-top: -175px;
+    margin-bottom: 80px;
+  }
+
+  .home__container {
+    min-height: 700px;
+    padding-top: 230px;
+    padding-left: 190px;
+
+    background-image: url("../../../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, $color-green 50%);
+    background-position: right center;
+    background-size: 50%, 100%;
+  }
+}

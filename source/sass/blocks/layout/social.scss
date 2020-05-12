@@ -1,0 +1,21 @@
+.social {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include outline(red);
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @include list-reset;
+}
+
+@include tablet-size {
+  .social {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

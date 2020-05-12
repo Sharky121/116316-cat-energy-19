@@ -1,0 +1,61 @@
+.success-story-info__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  font-size: 36px;
+  line-height: 1;
+  font-weight: inherit;
+}
+
+.success-story-info__description {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-family: "Arial", sans-serif;
+}
+
+.success-story-info__cost {
+  margin: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@include tablet-size {
+  .success-story-info__title {
+    margin-bottom: 60px;
+
+    font-size: 60px;
+  }
+
+  .success-story-info__description {
+    margin-bottom: 55px;
+
+    font-size: 16px;
+  }
+
+  .success-story-info__cost {
+    width: 175px;
+
+    font-size: 20px;
+    text-align: right;
+  }
+}
+
+@include desktop-size {
+  .success-story-info__title {
+    margin-top: 60px;
+    margin-bottom: 140px;
+  }
+
+  .success-story-info__description {
+    margin-bottom: 70px;
+  }
+
+  .success-story-info__cost {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: auto;
+  }
+}
