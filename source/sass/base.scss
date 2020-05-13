@@ -26,6 +26,12 @@ img {
   height: auto;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .visually-hidden {
   position: absolute;
 

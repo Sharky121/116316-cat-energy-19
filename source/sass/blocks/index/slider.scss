@@ -1,7 +1,7 @@
 .slider {
   text-align: center;
 
-  background-image: url("../../../img/before-mobile@1x.png");
+  background-image: url("/img/before-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 311px 232px;
@@ -11,14 +11,14 @@
 
 @include tablet-size {
   .slider {
-    background-image: url("../../../img/after-tablet@1x.png");
+    background-image: url("/img/after-tablet@1x.png");
     background-size: 636px 517px;
   }
 }
 
 @include desktop-size {
   .slider {
-    background-image: url("../../../img/after-desktop@1x.png");
+    background-image: url("/img/after-desktop@1x.png");
     background-size: 636px 517px;
   }
 }

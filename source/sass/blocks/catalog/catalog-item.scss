@@ -1,6 +1,5 @@
 .catalog-item {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   padding-top: 25px;
@@ -67,7 +66,6 @@
 @include tablet-size {
   .catalog__list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
