@@ -1,0 +1,16 @@
+.main-nav {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+@include tablet-size {
+  .main-nav {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    align-items: center;
+  }
+}

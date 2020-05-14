@@ -1,0 +1,31 @@
+.contacts__map {
+  width: 320px;
+  margin: 0 auto;
+
+  @include outline(purple);
+}
+
+@include tablet-size {
+  .contacts__map {
+    width: 768px;
+  }
+}
+
+@include desktop-size {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1440px;
+    max-width: 100%;
+    min-height: 400px;
+  }
+
+  .contacts__map {
+    width: 1440px;
+  }
+}

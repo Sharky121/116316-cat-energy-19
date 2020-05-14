@@ -7,39 +7,38 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
+    <header class="page-header page-header--index">
+      <div class="container page-header__container">
         <a class="page-header__logo">
           <img class="page-header__logo-img" src="img/logo-mobile.svg" width="190" height="38" alt="Кэт энерджи">
         </a>
 
         <nav class="main-nav">
-          <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
 
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       </div>
     </header>
 
     <main class="page-main">
       <!-- Секция ГЛАВНАЯ -->
       <section class="home">
-        <div class="container">
+        <div class="container home__container">
           <h1 class="home__title">Функциональное питание для котов</h1>
           <p class="home__sub-title">Занялся собой? Займись котом!</p>
-          <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Банка кошачьего корма">
           <a class="btn home__btn" href="">Подобрать программу</a>
         </div>
       </section>
@@ -67,7 +66,7 @@
 
       <!-- Секция КАК ЭТО РАБОТАЕТ -->
       <section class="how-it-work">
-        <div class="container">
+        <div class="container how-it-work__container">
           <h2 class="how-it-work__title">Как это работает</h2>
 
           <ul class="how-it-work__list">
@@ -89,47 +88,57 @@
 
       <!-- Секция ЖИВОЙ ПРИМЕР -->
       <section class="success-story">
-        <div class="container">
-          <h2 class="success-story__title">Живой пример</h2>
+        <div class="container success-story__container">
+          <div class="success-story__info success-story-info">
+            <h2 class="success-story-info__title">Живой пример</h2>
 
-          <p class="success-story__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
+            <p class="success-story-info__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
 
-          <table class="success-story__table success-story-table">
-            <tr class="success-story-table__tr">
-              <td class="success-story-table__td">5 кг</td>
-              <td class="success-story-table__td">60 дней</td>
-            </tr>
-            <tr class="success-story-table__tr">
-              <td class="success-story-table__td">снижение веса</td>
-              <td class="success-story-table__td">затрачено времени</td>
-            </tr>
-          </table>
+            <table class="success-story-info__table success-story-table">
+              <tr class="success-story-table__tr">
+                <td class="success-story-table__td">5 кг</td>
+                <td class="success-story-table__td">60 дней</td>
+              </tr>
+              <tr class="success-story-table__tr">
+                <td class="success-story-table__td">снижение веса</td>
+                <td class="success-story-table__td">затрачено времени</td>
+              </tr>
+            </table>
 
-          <p class="success-story__cost">Затраты на питание: 15 000 руб.</p>
+            <p class="success-story-info__cost">Затраты на питание: <span>15 000 руб.</span></p>
+          </div>
 
           <!-- Слайдер до/после -->
+          <div class="success-story__slider slider">
+
+          </div>
         </div>
       </section>
 
       <!-- Секция КАРТА И КОНТАКТЫ -->
-      <section class="map">
+      <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
 
-        <div class="container">
-          <div class="map__contacts address">
-            <b class="address__title">Приглашаем к сотрудничеству дилеров!</b>
-            <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="container contacts__container">
+          <div class="contacts-address">
+            <b class="contacts-address__title">Приглашаем к сотрудничеству дилеров!</b>
+            <p class="contacts-address__info">
+              <span class="contacts-address__street">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="contacts-address__city">Санкт-Петербург</span>
+            </p>
           </div>
         </div>
 
-        <!-- Карта -->
+        <div class="contacts__map map">
+          <!-- Карта -->
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__container">
         <div class="page-footer__logo footer-logo">
           <a class="footer-logo__link">
             <img class="footer-logo__img" src="img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">

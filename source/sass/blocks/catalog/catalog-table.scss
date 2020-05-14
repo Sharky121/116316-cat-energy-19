@@ -10,3 +10,9 @@
 .catalog-table__td:last-child {
   text-align: right;
 }
+
+@include tablet-size {
+  .catalog-table {
+    font-size: 16px;
+  }
+}

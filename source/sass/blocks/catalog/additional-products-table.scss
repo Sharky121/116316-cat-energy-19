@@ -1,0 +1,16 @@
+.additional-products-table {
+  width: 100%;
+
+  font-family: "Arial", sans-serif;
+  line-height: 1;
+}
+
+.additional-products-table__td:last-child {
+  text-align: right;
+}
+
+@include tablet-size {
+  .additional-products-table {
+    width: 250px;
+  }
+}

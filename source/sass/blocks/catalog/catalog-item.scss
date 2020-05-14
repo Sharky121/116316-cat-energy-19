@@ -1,0 +1,131 @@
+.catalog-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-top: 30px;
+  }
+
+  &--view-more {
+    display: block;
+
+    text-align: center;
+
+    .catalog-item__img {
+      margin-bottom: 25px;
+    }
+
+    .catalog-item__title {
+      width: 100%;
+
+      margin-bottom: 10px;
+    }
+  }
+
+  @include outline(red);
+}
+
+.catalog-item__title {
+  width: 75px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog-item__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  color: $color-dark-grey;
+}
+
+.catalog-item__btn {
+  display: block;
+  min-height: 40px;
+  width: 100%;
+  margin-top: 20px;
+
+  line-height: 40px;
+  text-align: center;
+
+  @include outline($color-green);
+}
+
+@include tablet-size {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .catalog-item {
+    display: block;
+    min-height: 513px;
+    width: 324px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    text-align: center;
+
+    background-image: linear-gradient(to bottom, #ffffff 15%, $color-grey 15%);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &--view-more {
+      background-image: none;
+      background-color: #ffffff;
+    }
+  }
+
+  .catalog-item__title {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+  }
+
+  .catalog-item__text {
+    margin-bottom: 85px;
+
+    font-size: 16px;
+  }
+
+  .catalog-item__btn {
+    margin-top: 30px;
+  }
+}
+
+@include desktop-size {
+  .catalog-item {
+    width: 245px;
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

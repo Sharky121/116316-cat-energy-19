@@ -1,0 +1,31 @@
+.catalog__container {
+  padding-top: 30px;
+}
+
+.catalog__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog-item__info {
+  flex-grow: 2;
+}
+
+@include tablet-size {
+  .catalog__title {
+    margin-bottom: 75px;
+
+    font-size: 60px;
+  }
+
+  .catalog-item__img {
+    margin-bottom: 40px;
+  }
+}

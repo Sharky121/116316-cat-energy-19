@@ -4,3 +4,19 @@
 
   list-style: none;
 }
+
+@mixin tablet-size {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-size {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin outline($color) {
+  outline: 1px solid $color;
+}
