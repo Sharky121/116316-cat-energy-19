@@ -1,8 +1,6 @@
 .contacts__map {
   width: 320px;
   margin: 0 auto;
-
-  @include outline(purple);
 }
 
 @include tablet-size {

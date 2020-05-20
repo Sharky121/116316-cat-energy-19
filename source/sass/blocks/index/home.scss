@@ -14,7 +14,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  background-image: url("/img/index-can-mobile@1x.png"), url("/img/index-background-mobile@1x.jpg"), linear-gradient($color-green 50%, #ffffff 50%);
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient($color-green 50%, #ffffff 50%);
   background-repeat: no-repeat, no-repeat;
   background-position: center 165px, center 0, top;
   background-size: 280px 270px, 100%, 100%;
@@ -60,7 +60,7 @@
     padding-left: 118px;
     padding-right: 0;
 
-    background-image: url("/img/index-can-tablet@1x.jpg"), none, none;
+    background-image: url("../img/index-can-tablet@1x.jpg"), none, none;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 709px 609px;
@@ -107,7 +107,7 @@
     padding-top: 227px;
     padding-left: 190px;
 
-    background-image: url("/img/index-can-desktop@1x.png"), url("/img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, $color-green 50%);
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, $color-green 50%);
     background-position: right 37% bottom 55px, right center, right;
     background-size: 552px 499px, 50%, 100%;
   }
