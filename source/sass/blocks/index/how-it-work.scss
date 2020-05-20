@@ -1,27 +1,31 @@
-.how-it-work {
-  @include outline(blue);
-}
-
 .how-it-work__container {
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 40px;
 }
 
 .how-it-work__title {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 
   font-size: 36px;
+  line-height: 48px;
   font-weight: inherit;
 }
 
 .how-it-work__list {
   @include list-reset;
+
+  counter-reset: how-it-work-item;
 }
 
 @include tablet-size {
+  .how-it-work__container {
+    padding-top: 51px;
+    padding-bottom: 40px;
+  }
+
   .how-it-work__title {
-    margin-bottom: 60px;
+    margin-bottom: 75px;
 
     font-size: 60px;
   }
@@ -35,6 +39,7 @@
 
 @include desktop-size {
   .how-it-work__container {
+    padding-top: 75px;
     padding-bottom: 25px;
   }
 }

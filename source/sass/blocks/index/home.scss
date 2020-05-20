@@ -1,4 +1,6 @@
 .home {
+  margin-bottom: 20px;
+
   text-align: center;
   color: #ffffff;
 }
@@ -7,24 +9,28 @@
   display: flex;
   flex-direction: column;
   min-height: 480px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  margin: 0 auto;
+  padding-top: 26px;
   padding-left: 20px;
   padding-right: 20px;
 
-  background-image: url("/img/index-background-mobile@1x.jpg"), linear-gradient($color-green 50%, #ffffff 50%);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100%;
+  background-image: url("/img/index-can-mobile@1x.png"), url("/img/index-background-mobile@1x.jpg"), linear-gradient($color-green 50%, #ffffff 50%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 165px, center 0, top;
+  background-size: 280px 270px, 100%, 100%;
 }
 
 .home__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
+}
+
+.home__title br {
+  display: none;
 }
 
 .home__sub-title {
@@ -35,53 +41,57 @@
 }
 
 .home__btn {
-  display: inline-block;
-  min-height: 40px;
-  width: 100%;
   margin-top: auto;
-
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-
-  @include outline($color-green);
 }
 
 @include tablet-size {
   .home {
+    margin-bottom: 0;
+
     text-align: left;
     color: $color-black;
   }
 
   .home__container {
-    min-height: 880px;
-    padding-left: 120px;
+    align-items: flex-start;
+    max-width: 768px;
+    min-height: 843px;
+    padding-top: 33px;
+    padding-left: 118px;
     padding-right: 0;
 
-    background-image: none;
+    background-image: url("/img/index-can-tablet@1x.jpg"), none, none;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 709px 609px;
     background-color: #ffffff;
   }
 
   .home__title {
-    width: 415px;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
 
     font-size: 60px;
   }
 
+  .home__title br {
+    display: block;
+  }
+
   .home__sub-title {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 
     font-size: 20px;
   }
 
   .home__btn {
-    min-height: 52px;
-    width: 245px;
+    width: auto;
     margin-top: 0;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+    padding-right: 29px;
 
     font-size: 20px;
-    line-height: 52px;
   }
 }
 
@@ -92,12 +102,17 @@
   }
 
   .home__container {
+    max-width: 1920px;
     min-height: 700px;
-    padding-top: 230px;
+    padding-top: 227px;
     padding-left: 190px;
 
-    background-image: url("/img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, $color-green 50%);
-    background-position: right center;
-    background-size: 50%, 100%;
+    background-image: url("/img/index-can-desktop@1x.png"), url("/img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, $color-green 50%);
+    background-position: right 37% bottom 55px, right center, right;
+    background-size: 552px 499px, 50%, 100%;
+  }
+
+  .home__sub-title {
+    margin-bottom: 49px;
   }
 }

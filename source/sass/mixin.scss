@@ -5,6 +5,12 @@
   list-style: none;
 }
 
+@mixin mobile-width-only {
+  @media (max-width: #{$mobile-width-only}) {
+    @content;
+  }
+}
+
 @mixin tablet-size {
   @media (min-width: #{$tablet-width}) {
     @content;

@@ -19,6 +19,29 @@
   line-height: 1;
   text-transform: uppercase;
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+}
+
+@include mobile-width-only {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list {
+    display: block;
+  }
 }
 
 @include tablet-size {
@@ -31,6 +54,23 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -3px;
+
+        height: 2px;
+
+        background-color: $color-green;
+      }
     }
   }
 
@@ -47,5 +87,11 @@
 
   .page-header--index .site-list__link {
     color: #ffffff;
+  }
+
+  .page-header--index .site-list__item--active {
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }

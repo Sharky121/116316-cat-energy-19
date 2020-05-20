@@ -1,20 +1,27 @@
-.copyright {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  @include outline(red);
-}
-
 .copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover {
+    .copyright__icon {
+      fill: $color-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
 }
 
 .copyright__text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
-  text-transform: uppercase;
   color: $color-dark-grey;
 }
 
@@ -22,5 +29,9 @@
   .copyright {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .copyright__text {
+    margin-right: 23px;
   }
 }

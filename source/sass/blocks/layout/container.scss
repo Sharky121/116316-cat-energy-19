@@ -1,15 +1,10 @@
 .container {
-  max-width: 320px;
-  margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
-
-  @include outline(purple);
 }
 
 @include tablet-size {
   .container {
-    max-width: 768px;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -17,7 +12,9 @@
 
 @include desktop-size {
   .container {
-    max-width: 1440px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
     padding-right: 110px;
     padding-left: 110px;
   }

@@ -10,13 +10,20 @@
   }
 }
 
+@include tablet-size {
+  .diet-plans__item {
+    margin-bottom: 35px;
+  }
+}
+
 @include desktop-size {
   .diet-plans__list {
     display: flex;
+    justify-content: space-between;
   }
 
   .diet-plans__item {
-    flex-basis: 570px;
+    min-width: 570px;
     margin-right: 80px;
     margin-bottom: 0;
 
