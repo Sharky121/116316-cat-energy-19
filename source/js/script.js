@@ -1,20 +1,20 @@
 'use strict';
 
-const Nodes = {
+const Node = {
   MAIN_NAV: document.querySelector(`.main-nav`),
   NAV_BUTTON_TOGGLE: document.querySelector(`.main-nav__toggle`)
 }
 
 const navButtonClickHandler = () => {
-  if (Nodes.MAIN_NAV.classList.contains(`main-nav--closed`)) {
-    Nodes.MAIN_NAV.classList.remove(`main-nav--closed`);
-    Nodes.MAIN_NAV.classList.add(`main-nav--open`);
+  if (Node.MAIN_NAV.classList.contains(`main-nav--closed`)) {
+    Node.MAIN_NAV.classList.remove(`main-nav--closed`);
+    Node.MAIN_NAV.classList.add(`main-nav--open`);
   } else {
-    Nodes.MAIN_NAV.classList.add(`main-nav--closed`);
-    Nodes.MAIN_NAV.classList.remove(`main-nav--open`);
+    Node.MAIN_NAV.classList.add(`main-nav--closed`);
+    Node.MAIN_NAV.classList.remove(`main-nav--open`);
   }
 }
 
-Nodes.MAIN_NAV.classList.remove(`main-nav--nojs`);
+Node.MAIN_NAV.classList.remove(`main-nav--nojs`);
 
-Nodes.NAV_BUTTON_TOGGLE.addEventListener(`click`, navButtonClickHandler);
+Node.NAV_BUTTON_TOGGLE.addEventListener(`click`, navButtonClickHandler);

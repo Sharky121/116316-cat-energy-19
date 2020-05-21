@@ -16,12 +16,13 @@
 @import "blocks/layout/social.scss";
 @import "blocks/layout/copyright.scss";
 @import "blocks/layout/site-list.scss";
-@import "blocks/layout/buttons.scss";
+@import "blocks/layout/btn.scss";
 
 // index
 @import "blocks/index/home.scss";
 @import "blocks/index/diet-plans.scss";
 @import "blocks/index/diet-plans-item.scss";
+@import "blocks/index/diet-plan-btn.scss";
 @import "blocks/index/how-it-work.scss";
 @import "blocks/index/how-it-work-item.scss";
 @import "blocks/index/success-story.scss";
@@ -34,6 +35,7 @@
 
 // catalog
 @import "blocks/catalog/catalog.scss";
+@import "blocks/catalog/btn-show-all.scss";
 @import "blocks/catalog/additional-products.scss";
 @import "blocks/catalog/gift.scss";
 @import "blocks/catalog/catalog-item.scss";
