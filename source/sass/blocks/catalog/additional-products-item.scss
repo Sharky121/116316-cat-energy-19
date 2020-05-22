@@ -22,16 +22,6 @@
   text-transform: uppercase;
 }
 
-.additional-products-item__btn {
-  display: block;
-  min-height: 40px;
-
-  line-height: 40px;
-  text-align: center;
-
-  @include outline($color-green);
-}
-
 @include tablet-size {
   .additional-products-item {
     padding-right: 40px;
@@ -53,10 +43,6 @@
     margin-bottom: 0;
 
     font-size: 20px;
-  }
-
-  .additional-products-item__btn {
-    width: 100%;
   }
 }
 
@@ -80,9 +66,5 @@
 
   .additional-products-item__title {
     margin-right: auto;
-  }
-
-  .additional-products-item__btn {
-    width: 245px;
   }
 }

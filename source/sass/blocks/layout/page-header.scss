@@ -1,15 +1,28 @@
-.page-header {
-  @include outline(purple);
-}
-
 .page-header__container {
-  outline: 1px solid red;
+  position: relative;
+
+  border-bottom: 1px solid $color-grey;
 }
 
 .page-header__logo {
   display: block;
   padding-top: 10px;
   padding-bottom: 15px;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
 }
 
 @include tablet-size {
@@ -17,13 +30,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    border-bottom: none;
   }
 
   .page-header__logo {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .page-header__logo-img {
+    width: 173px;
+    height: 58px;
   }
 }
 

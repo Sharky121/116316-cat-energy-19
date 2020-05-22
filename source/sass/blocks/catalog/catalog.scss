@@ -1,5 +1,5 @@
 .catalog__container {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .catalog__title {
@@ -12,6 +12,9 @@
 
 .catalog__list {
   @include list-reset;
+
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .catalog-item__info {
@@ -19,6 +22,10 @@
 }
 
 @include tablet-size {
+  .catalog__container {
+    padding-top: 24px;
+  }
+
   .catalog__title {
     margin-bottom: 75px;
 
@@ -26,6 +33,27 @@
   }
 
   .catalog-item__img {
-    margin-bottom: 40px;
+    width: 161px;
+    height: 172px;
+
+    margin-bottom: 35px;
+
+    @include outline(red);
+  }
+
+  .catalog-item--big .catalog-item__img {
+    width: 195px;
+    height: 208px;
+  }
+
+  .catalog__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include desktop-size {
+  .catalog__container {
+    padding-top: 8px;
   }
 }

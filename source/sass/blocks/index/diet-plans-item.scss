@@ -1,17 +1,61 @@
 .diet-plans-item {
-  padding-top: 40px;
-  padding-right: 35px;
-  padding-bottom: 20px;
+  position: relative;
+
+  padding-top: 32px;
+  padding-right: 20px;
+  padding-bottom: 22px;
   padding-left: 20px;
 
   background-color: $color-grey;
 
-  @include outline(red);
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 22px;
+    top: 48px;
+
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+
+    background-color: $color-green;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    background-size: cover;
+  }
+
+  &--loss::after {
+    top: 23px;
+    left: 30px;
+
+    width: 35px;
+    height: 49px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  &--gain::after {
+    top: 35px;
+    left: 13px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+  }
 }
 
 .diet-plans-item__title {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
+  padding-left: 70px;
 
   font-size: 24px;
   font-weight: inherit;
@@ -21,52 +65,128 @@
 
 .diet-plans-item__description {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   font-family: "Arial", sans-serif;
+  line-height: 18px;
   color: $color-dark-grey;
-}
 
-.diet-plans-item__btn {
-  font-size: 16px;
-  color: $color-black;
-  text-transform: uppercase;
+  border-bottom: 1px solid $color-grey-third;
 }
 
 @include tablet-size {
   .diet-plans-item {
-    min-height: 370px;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-right: 60px;
     padding-bottom: 60px;
-    padding-left: 55px;
+    padding-left: 52px;
+
+    &::before {
+      left: auto;
+      right: 60px;
+      top: 115px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--loss::after {
+      left: auto;
+      right: 92px;
+      top: 80px;
+
+      width: 140px;
+      height: 194px;
+    }
+
+    &--gain::after {
+      left: auto;
+      right: 28px;
+      top: 130px;
+
+      width: 268px;
+      height: 112px;
+    }
   }
 
   .diet-plans-item__title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    padding-left: 0;
 
     font-size: 36px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .diet-plans-item__description {
     max-width: 375px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
+    padding-bottom: 0;
 
     font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
   }
 
-  .diet-plans-item__btn {
-    font-size: 20px;
+  .diet-plans-item--gain .diet-plans-item__description {
+    max-width: 340px;
   }
 }
 
 @include desktop-size {
+  .diet-plans-item {
+    padding-top: 73px;
+    padding-right: 56px;
+    padding-bottom: 62px;
+    padding-left: 52px;
+
+    &::before {
+      left: 52px;
+      right: auto;
+      top: 70px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--loss::after {
+      top: 42px;
+      left: 66px;
+
+      width: 70px;
+      height: 97px;
+    }
+
+    &--gain::after {
+      top: 68px;
+      left: 34px;
+
+      width: 134px;
+      height: 56px;
+
+      background-image: url("../img/icon-cat-pro.svg");
+    }
+  }
+
   .diet-plans-item__title {
-    margin-bottom: 75px;
+    margin-bottom: 68px;
+    padding-left: 164px;
   }
 
   .diet-plans-item__description {
     max-width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+  }
+
+  .diet-plans-item--gain .diet-plans-item__description {
+    max-width: 100%;
   }
 }

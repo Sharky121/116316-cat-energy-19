@@ -1,7 +1,24 @@
 .page-footer {
   background-color: $color-grey;
+}
 
-  @include outline(purple);
+.page-footer__logo {
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid $color-grey-third;
+}
+
+.page-footer__social {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid $color-grey-third;
+}
+
+.page-footer__copyright {
+  padding-top: 18px;
+  padding-bottom: 20px;
 }
 
 @include tablet-size {
@@ -11,5 +28,13 @@
     align-items: center;
     padding-top: 65px;
     padding-bottom: 65px;
+  }
+
+  .page-footer__logo {
+    border-bottom: none;
+  }
+
+  .page-footer__social {
+    border-bottom: none;
   }
 }
